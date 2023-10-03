@@ -189,7 +189,7 @@ img {
 
 /*===== HOME =====*/
 .home {
-  position: relative;
+  position:relative;
   row-gap: 5rem;
   padding: 4rem 0 5rem;
 }
@@ -215,13 +215,14 @@ img {
 .home__social-icon {
   width: max-content;
   margin-bottom: var(--mb-2);
-  font-size: 1.5rem;
+  font-size: 3rem;
   color: var(--second-color);
 }
 
 .home__social-icon:hover {
   color: var(--first-color);
 }
+
 
 .home__img {
   position: absolute;
@@ -273,9 +274,67 @@ img {
 }
 
 /* ===== SKILLS =====*/
+
+
+.services .icon-box {
+  margin-bottom: 20px;
+}
+
+.services .icon {
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  background: #149ddd;
+  border-radius: 50%;
+  transition: 0.5s;
+  border: 1px solid #149ddd;
+}
+
+.services .icon i {
+  color: #fff;
+  font-size: 24px;
+  line-height: 0;
+}
+
+.services .icon-box:hover .icon {
+  background: #fff;
+}
+
+.services .icon-box:hover .icon i {
+  color: #149ddd;
+}
+
+
+.services .title {
+  margin-left: 80px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.services .title a {
+  color: #343a40;
+  font-size: 23px;
+}
+
+.services .title a:hover {
+  color: #149ddd;
+}
+
+.services .description {
+  margin-left: 80px;
+  line-height: 24px;
+  font-size: 18px;
+}
+
+
 .skills__container {
   row-gap: 2rem;
   text-align: center;
+  background: #E4F1FF;
 }
 
 .skills__subtitle {
@@ -319,25 +378,55 @@ img {
   z-index: var(--z-back);
 }
 
+img.prl{
+    max-width: 100%;
+    height: 35px;
+
+}
+
+img.dtb{
+  max-width: 100%;
+  height: 35px;
+}
+
+img.frm{
+  max-width: 100%;
+  height: 35px;
+}
+
+img.amzs{
+  max-width: 100%;
+  height: 35px;
+}
+
+.container .feature col ul i {
+  font-size: 16px;
+  margin-right: 5px;
+  color: #ffb727;
+  line-height: 0;
+}
+
 .skills__html {
-  width: 95%;
+  width: 100%;
 }
 
 .skills__css {
-  width: 85%;
+  width: 100%;
 }
 
 .skills__js {
-  width: 65%;
+  width: 100%;
 }
 
 .skills__ux {
-  width: 85%;
+  width: 100%;
 }
 
 .skills__img {
   border-radius: .5rem;
 }
+
+
 
 /* ===== WORK =====*/
 .work__container {
@@ -359,6 +448,11 @@ img {
 }
 
 /* ===== CONTACT =====*/
+
+.contact__container{
+  display: flex;
+  justify-content:left;
+}
 .contact__input {
   width: 100%;
   font-size: var(--normal-font-size);
