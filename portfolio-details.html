@@ -27,6 +27,8 @@
   
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   
 </head>
 
@@ -42,10 +44,10 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Portfoio Details</h2>
+          <h2>Project Details</h2>
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li>Portfoio Details</li>
+            <li>Project Details</li>
           </ol>
         </div>
 
@@ -53,26 +55,29 @@
     </section><!-- End Breadcrumbs -->
 
     <!-- ======= Portfolio Details Section ======= -->
-    <section id="portfolio-details" class="portfolio-details">
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper">
-              <div class="swiper-wrapper align-items-center">
-
-                <div class="inline-block">
-                  <img src="assets/img/consumer2.jpg" height="500px" width="700px" alt="">
-                </div>
-
-                <div class="inline-block">
-                  <img src="assets/img/consumer3.jpg" height="500px" width="700px"  alt="">
-                </div>
-
-              </div>
-              <div class="swiper-pagination"></div>
+    <section id="portfolio-details" class="portfolio-details" data-bs-theme="dark">
+        <div class="container">
+          <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
             </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./assets/img/consumer3.jpg" class="d-block w-100" alt="consumer3">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/img/consumer2.jpg" class="d-block w-100" alt="consumer2">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
 
           <div class="col-lg-4">
